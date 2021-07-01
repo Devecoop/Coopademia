@@ -105,10 +105,10 @@ html {
       color: $header-text-color;
     }
 
-    .site-favicon {
+    .site-logo {
       display: inline-block;
-      height: $header-height / 1.5;
-      margin-right: 5px;
+      height: $header-height / 1.25;
+      padding: 0px 15px;
     }
   }
 }
