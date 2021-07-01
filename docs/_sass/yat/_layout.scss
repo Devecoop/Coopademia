@@ -264,6 +264,7 @@ html {
 /**
  * Pagination page
  */
+
 .pagination {
   .post-list {
     margin-left: 0;
@@ -275,6 +276,35 @@ html {
 
       &:not(:last-child) {
         border-bottom: 1px solid #e3e3e3;
+      }
+    }
+  }
+
+  .post-item {
+    display: flex;
+    height: 185px;
+  }
+
+  .post-image {
+    align-self: center;
+    margin-right: 10px;
+    max-width: 185px;
+    min-width: 185px;
+
+    height: 100%;
+
+    img {
+      height: 100%;
+    }
+  }
+
+  @include media-query($on-laptop) {
+    .post-image {
+      max-width: 90px;
+      min-width: 90px;
+
+      img {
+        height: unset;
       }
     }
   }
