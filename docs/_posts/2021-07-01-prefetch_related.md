@@ -3,7 +3,8 @@ layout: post
 title: Django ORM - prefetch_related
 subheading: optimización para django ORM.
 author: FedeG
-categories: django
+image: assets/images/posts/prefetch_related/0.jpg
+categories: django python
 tags: django python orm optimize
 sidebar: []
 ---
