@@ -134,3 +134,4 @@ dmypy.json
 .sass-cache
 _site
 Gemfile.lock
+docs/.jekyll-cache/
