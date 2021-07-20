@@ -4,7 +4,7 @@ Hoy en coopademia: Flexbox layout en CSS y sus propiedades principales
 # Etapa 2 - Definición de flexbox
 El módulo **flexbox** busca proveer una forma eficiente de presentar, alinear y distribuir el espacio entre los items de un *container*, incluso cuando el tamaño es desconocido y/o dinámico.
 La idea principal es darle al *container* la habilidad de alterar la altura y/o ancho de sus items para llenar de la mejor manera el espacio disponible.
-Para definir un *container* como flex seteamos el atributo *display* con el valor *flex*
+Para definir un *container* como flex seteamos el atributo *display* con el valor *flex*.
 
 (aca pondría de imagen una captura de código con un
 
@@ -63,7 +63,7 @@ Para definir un *container* como flex seteamos el atributo *display* con el valo
 	  flex-wrap: nowrap | wrap | wrap-reverse; /*default no-wrap*/
     }
     .item {
-      flex: 1 3 20%
+      flex: 1 3 20%;
 	  flex-grow: 1; /*default 0*/
 	  flex-shrink: 3; /*default 1*/
 	  flex-basis: 20% | auto /*default auto*/
