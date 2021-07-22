@@ -63,5 +63,5 @@ sidebar: []
 - Instalar **jekyll** y **bundle** con **gem**: `gem install jekyll bundler`
 - Entrar a la carpeta `docs/`
 - Instalar las dependencias del proyecto: `bundle install`
-- Ejecutar el servidor de desarrollo: `bundle exec jekyll serve`
+- Ejecutar el servidor de desarrollo: `bundle exec jekyll serve --future` (`--future` es para que muestre post de fechas futuras, github ya lo hace)
 - Entrar en `http://127.0.0.1:4000/Coopademia/` (no tiene live-reloading, hay que usar F5)
