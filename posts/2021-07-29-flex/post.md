@@ -6,13 +6,7 @@ El módulo **flexbox** busca proveer una forma eficiente de presentar, alinear y
 La idea principal es darle al *container* la habilidad de alterar la altura y/o ancho de sus items para llenar de la mejor manera el espacio disponible.
 Para definir un *container* como flex seteamos el atributo *display* con el valor *flex*.
 
-(aca pondría de imagen una captura de código con un
-
-    .container {
-      display: flex;
-    }
-
-)
+![](./images/post-flexbox-1.png)
 
 # Etapa 3 - Atributos de dirección y alineación
 
@@ -27,6 +21,8 @@ Para definir un *container* como flex seteamos el atributo *display* con el valo
 * space-around:  Los items son distribuidos uniformemente sobre el eje principal con el mismo espacio alrededor de ellos pero el espacio del primer y último item con el borde es distinto. 
 * space-evenly: Los items son distribuidos uniformemente sobre el eje principal con el mismo espacio alrededor de ellos y el mismo espacio es utilizado entre el primer y último item con los bordes.
 
+![](./images/post-flexbox-justify-content.png)
+
 **align-items**: Define cómo se alinean los items sobre el eje secundario.
 
 * stretch: Los items se estiran para llenar el container (respetando el *min-width*/*max-width*).
@@ -35,15 +31,9 @@ Para definir un *container* como flex seteamos el atributo *display* con el valo
 * center: Los items son centrados sobre el eje secundario.
 * baseline: Los items son alineados de tal manera que sus baselines individuales queden alineadas.
 
-(aca pondría de imagen una captura de código con un
+![](./images/post-flexbox-align-items.png)
 
-    .container {
-      flex-direction: row | row-reverse | column | column-reverse; /*default row*/
-      justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly; /*default flex-start*/
-      align-items: stretch | flex-start | flex-end | center | baseline; /*default stretch*/
-    }
-
-)
+![](./images/post-flexbox-2.png)
 
 # Etapa 4 - Atributos de ajuste
 
@@ -57,19 +47,7 @@ Para definir un *container* como flex seteamos el atributo *display* con el valo
 
 **flex**: Es un atajo para definir **flex-grow**, **flex-shrink** y **flex-basis** juntas. El segundo y tercer parámetro son opcionales.
 
-(aca pondría de imagen una captura de código con un
-
-    .container {
-	  flex-wrap: nowrap | wrap | wrap-reverse; /*default no-wrap*/
-    }
-    .item {
-      flex: 1 3 20%;
-	  flex-grow: 1; /*default 0*/
-	  flex-shrink: 3; /*default 1*/
-	  flex-basis: 20% | auto /*default auto*/
-    }
-
-)
+![](./images/post-flexbox-3.png)
 
 # Etapa 5
 
