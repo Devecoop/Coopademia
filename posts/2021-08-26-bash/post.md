@@ -15,7 +15,7 @@ Uso:
 	- Si lo encontrás, con `Enter` lo ejecutas
 	- Si no lo encontrás, con `ctrl + c` cerrás la búsqueda
 	
-	Extra tip: si ejecutás un comando que sabés que te va a ser útil en el futuro podés taggearlo, simplemente agregando un comentario (#) luego del mismo: 
+Extra tip: si ejecutás un comando que sabés que te va a ser útil en el futuro podés taggearlo, simplemente agregando un comentario (#) luego del mismo: 
 		`docker-compose exec container /bin/bash #bash-en-container`
 
 # Placa 3 - Búsqueda en archivos
@@ -28,7 +28,7 @@ El uso habitual es búsqueda de patrones en un archivo:
 
 Pero también podemos hacer búsquedas recursivas (-r) y case-insensitive (-i), lo que nos permite buscar patrones en directorios:
 
-	`grep -ri patron /ruta/a/directorio`
+`grep -ri patron /ruta/a/directorio`
 
 
 # Placa 4 - Bloqueos
