@@ -3,22 +3,22 @@ Hoy en coopademia especial niñes!: Programación en bloques con Pilas Bloques.
 
 # Placa 2 - Qué es la programación en bloques?
 
-La programación en bloques es una forma de desarrollar programas con acciones e instrucciones incorporadas en bloques o piezas prediseñadas.
+La programación en bloques es una manera de desarrollar programas con instrucciones y acciones en forma de bloques.
 
 ![](./images/post-bloques-1.gif)
 
-El resultado de encastrar los bloques entre sí es el programa que resuelve el problema o desafío planteado.
+Al encastrar los bloques entre sí, estaríamos armando el programa que resuelve el problema o desafío.
 
 
 ![](./images/post-bloques-2.gif)
 
 # Placa 3 - Por qué es ideal para aprender?
 
-Cada concepto abstracto de programación tiene su representación visual.
+Todos los conceptos abstractos de programación tienen su representación visual.
 
-Esto ahorra las dificultades que genera la sintaxis de un lenguaje, la frustración cuando cometemos un error.
+Es decir, no es necesario escribir código! y no tendremos esa frustración cuando cometemos errores de sintaxis.
 
-Los bloques se seleccionan, arrastran, encastran y listo!
+Armar los programas es tan simple como seleccionar los bloques, arrastrarlos, y encastrarlos!
 
 ![](./images/post-bloques-3.gif)
 
@@ -28,7 +28,7 @@ Los bloques se seleccionan, arrastran, encastran y listo!
 
 Pilas Bloques es una aplicación Argentina para aprender a programar de una forma interactiva y autodidacta.
 
-Está llena de desafíos con diversos niveles de dificultad para acercar a les estudiantes al mundo de la programación.
+Está llena de desafíos con varios niveles, para acercar a les niñes al mundo de la programación.
 
 A medida que avanzamos en los desafíos iremos aprendiendo diferentes conceptos y estructuras, tales como:
 
