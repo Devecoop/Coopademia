@@ -33,7 +33,7 @@ La lista que viste al principio fue plasmado en 4 enunciados (que se pueden enco
 
 # Placa 6 Eventol
 
-Uno de nuestros socies es el colaborador principal / co-creador (preguntar a Fede) del software para gestión de eventos Eventol. El mismo es usado para la gestión de el FLISoL (Festival Latinoamericano de Instalación de Software Libre) y fue usado para la PyCon Argentina.
+Uno de nuestros socies es co-creador y colaborador principal del software para gestión de eventos Eventol. El mismo es un software libre usado para la gestión de FLISoL (Festival Latinoamericano de Instalación de Software Libre) y también por PyAr tanto para gestionar la PyCon como los PyDays.
 
 # Links
 - https://www.gnu.org/philosophy/free-sw.es.html#four-freedoms
