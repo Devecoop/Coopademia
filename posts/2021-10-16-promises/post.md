@@ -17,13 +17,13 @@ Una promesa siempre cumple con las siguientes garantías:
 
 # Placa 3 Ejemplo
 
-Pensemos que tenemos que hacer un método que llame realice una request post a una api de animales para crear un registro nuevo. Si la creación es exitosa queremos mostrar un mensaje de éxito y lo mismo para el caso de fallo. Además tenemos que setear el atributo loading del objeto en true mientras se lleve a cabo la operación.
+Pensemos que tenemos que hacer un método que realice una request post (usando una función auxiliar que retorna una promesa) a una api de animales para crear un registro nuevo. Si la creación es exitosa queremos mostrar un mensaje de éxito y lo mismo para el caso de fallo. Además tenemos que setear el atributo loading del objeto en true mientras se lleve a cabo la operación.
 
 ![](./images/promises-1.png)
 
 # Placa 4 Convertir una función que utiliza callback a una que retorna una promesa
 
-También podemos convertir una funcíon que utiliza callback a una función que retorna una promesa usando el constructor *Promise*. Este constructor recibe una función como parametro que recibe dos funciones como parametro: *resolve* y *reject*. Al llamar a *resolve* indicamos que la operación asíncrona fue exitosa y al llamar *reject* indicamos que la misma falló.
+También podemos convertir una funcíon que utiliza un callback a una función que retorna una promesa usando el constructor *Promise*. Este constructor recibe una función como parametro que recibe dos funciones como parametro: *resolve* y *reject*. Al llamar a *resolve* indicamos que la operación asíncrona fue exitosa y al llamar *reject* indicamos que la misma falló.
 
 ![](./images/promises-2.png)
 
