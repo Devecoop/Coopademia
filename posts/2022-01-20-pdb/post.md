@@ -11,17 +11,7 @@ En este caso vamos a mostrarte como ejemplo la herramientas de debugging que tra
 
 Supongamos que nuestro programa es el siguiente:
 
-```python
-def sumar_numeros(numero_1, numero_2):
-    return numero_1 + numero_2
-
-
-numero_1 = input('Ingresá un número: ')
-numero_2 = input('Ingresá otro número: ')
-
-resultado = sumar_numeros(numero_1, numero_2)
-print resultado
-```
+![](./images/pdb-1.png)
 
 
 Ejecutamos el programa, y cuando nos piden cada número ingresamos primero un 3, y luego un 4.
@@ -41,12 +31,7 @@ Vamos a agregar al código un breakpoint, es decir, una instrucción del debugge
 
 Por ejemplo, vamos a generar ese breakpoint en la función que suma, que es adonde suponemos está nuestro error:
 
-```python
-def sumar_numeros(numero_1, numero_2):
-    import pdb
-    pdb.set_trace()
-    return numero_1 + numero_2
-```
+![](./images/pdb-2.png)
 
 # Placa 4 Continuación
 
