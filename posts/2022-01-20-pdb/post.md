@@ -46,9 +46,9 @@ Ingresá otro número: 4
 ```
 
 1. Lo primero que vemos es que la herramienta nos marca el punto exacto en el que está parado nuestra ejecución:
-La ruta absoluta del archivo, el número de línea entre paréntesis y luego el nombre.
+La ruta absoluta del archivo, el número de línea entre paréntesis y luego el nombre de la función.
 2. Lo siguiente que nos muestra es la próxima línea que se ejecutará luego de que le digamos al debugger que continúe (o sea, esa línea aún no fue ejecutada, si fuera la creación de una variable no podríamos en este punto acceder a ella).
-3. El prompt **(Pdb)** nos señala que nuestro código está frenado con el debugger, y en ese prompt podemos usar cualquier instrucción de python, y tenemos acceso a todas las variables que son accesibles en ese contexto (scope).
+3. El prompt **(Pdb)** nos señala que nuestro código está frenado con el debugger, y en ese prompt podemos usar cualquier instrucción de Python, y tenemos acceso a todas las variables que son accesibles en ese contexto (scope).
 
 # Placa 5 Continuación
 
