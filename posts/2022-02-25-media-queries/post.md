@@ -22,15 +22,13 @@ Los **mediatype** son los tipos de medio en el que se aplicará la query. Estos 
 - `speech`: Para sintetizadores de voz.
 
 Y las **mediafeatures** son una o mas expresiones que indicarán sobre qué características se aplicará la query.
-En este caso, veremos las **mediafeatures** más comunes para el `screen` mediatype.
+En este caso, veremos las **mediafeatures** más comunes para el `screen` mediatype, que indican distintas propiedades de la pantalla.
 
-Existen diferentes **mediafeatures** que indican diferentes propiedades de la pantalla. Entre ellas puede encontrarse:
+Entre ellas puede encontrarse:
 - `height`: Alto de la pantalla
 - `width`: Ancho de la pantalla
 - `orientation`: Orientación de la pantalla (si el celular está horizontal)
 - `resolution`: Resolución de la pantalla
-
-Entre otras...
 
 Si queremos aplicar diferentes estilos dependiendo del ancho de la pantalla, utilizaremos `max-width` y `min-width`.
 El valor que le demos a `max-width` dará verdadero si el ancho de la pantalla es menor, mientras que `min-width` si es mayor.
@@ -53,7 +51,7 @@ En este ejemplo, el archivo `desktop.css` será aplicado cuando la pantalla teng
 mientras que el archivo `mobile.css` se aplicará cuando la pantalla tenga menos de 600 píxeles de ancho.
 # Placa 5 - Breakpoints comunes para diferentes dispositivos
 
-Existen muchos dispositivos con pantallas de diferentes tamaños, por lo que sería dificil aplicar las media queries de forma específica.
+Existen muchos dispositivos con pantallas de distintos tamaños, por lo que sería dificil aplicar las media queries de forma específica.
 Sin embargo, podemos utilizar algunas medidas para abarcar la mayoría de las pantallas:
 
 Teléfonos celulares:
@@ -80,5 +78,7 @@ Notebooks grandes y computadoras de escritorio
 # Links
 
 https://www.w3schools.com/css/css_rwd_mediaqueries.asp
+
 https://www.w3schools.com/cssref/css3_pr_mediaquery.asp
+
 https://developer.mozilla.org/es/docs/Web/CSS/Media_Queries/Using_media_queries
