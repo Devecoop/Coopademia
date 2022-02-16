@@ -3,10 +3,10 @@ Hoy en coopademia: Screen media queries en CSS
 
 # Placa 2 - Qué son las media queries?
 
-Las media queries son un metodo de CSS que nos permite aplicar diferentes estilos basandose en características del
+Las media queries son un metodo de CSS que nos permite aplicar diferentes estilos basándonos en características del
 dispositivo (tamaño de pantalla, orientación, entre otras).
 
-Utilizando la regla **@media**, podemos incluír un bloque de propiedades de CSS si las condiciones dadas son verdaderas.
+Utilizando la regla **@media**, podemos incluir un bloque de propiedades de CSS si las condiciones dadas son verdaderas.
 
 En el desarrollo de sitios responsive, las usamos para adaptar el contenido a diferentes tamaño de pantalla.
 
@@ -31,7 +31,8 @@ Entre ellas puede encontrarse:
 - `resolution`: Resolución de la pantalla
 
 Si queremos aplicar diferentes estilos dependiendo del ancho de la pantalla, utilizaremos `max-width` y `min-width`.
-El valor que le demos a `max-width` dará verdadero si el ancho de la pantalla es menor, mientras que `min-width` si es mayor.
+* Si usamos `max-width` nuestra mediaquery dará verdadero -es decir, se mostrará el css- si el ancho de la pantalla es **menor** al valor que definimos.
+* Si usamos `min-width`, dará verdadero si el ancho de la pantalla es **mayor** al valor que definimos.
 
 # Placa 4 - Sintaxis y hojas de estilo
 Dentro de una hoja de estilos, las media queries se escriben así:
@@ -49,6 +50,7 @@ Para esto es necesario agregar al elemento `<link>` la propiedad `media`, y dent
 
 En este ejemplo, el archivo `desktop.css` será aplicado cuando la pantalla tenga más de 900 píxeles de ancho,
 mientras que el archivo `mobile.css` se aplicará cuando la pantalla tenga menos de 600 píxeles de ancho.
+
 # Placa 5 - Breakpoints comunes para diferentes dispositivos
 
 Existen muchos dispositivos con pantallas de distintos tamaños, por lo que sería dificil aplicar las media queries de forma específica.
