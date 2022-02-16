@@ -12,7 +12,7 @@ En el desarrollo de sitios responsive, las usamos para adaptar el contenido a di
 
 <img src="images/media-queries-1.png" width="400">
 
-# Placa 3 - Cómo están compuestas las media queries?
+# Placa 3 - Cómo están compuestas las media queries? (mediatypes)
 
 Las media queries consisten de una o más **mediatypes** y **mediafeatures**.
 Los **mediatype** son los tipos de medio en el que se aplicará la query. Estos pueden ser:
@@ -21,7 +21,8 @@ Los **mediatype** son los tipos de medio en el que se aplicará la query. Estos 
 - `screen`: Para las pantallas del dispositivo.
 - `speech`: Para sintetizadores de voz.
 
-Y las **mediafeatures** son una o mas expresiones que indicarán sobre qué características se aplicará la query.
+# Placa 4 - Cómo están compuestas las media queries? (mediafeatures)
+Las **mediafeatures** son una o mas expresiones que indicarán sobre qué características se aplicará la query.
 En este caso, veremos las **mediafeatures** más comunes para el `screen` mediatype, que indican distintas propiedades de la pantalla.
 
 Entre ellas puede encontrarse:
@@ -34,7 +35,7 @@ Si queremos aplicar diferentes estilos dependiendo del ancho de la pantalla, uti
 * Si usamos `max-width` nuestra mediaquery dará verdadero -es decir, se mostrará el css- si el ancho de la pantalla es **menor** al valor que definimos.
 * Si usamos `min-width`, dará verdadero si el ancho de la pantalla es **mayor** al valor que definimos.
 
-# Placa 4 - Sintaxis y hojas de estilo
+# Placa 5 - Sintaxis y hojas de estilo
 Dentro de una hoja de estilos, las media queries se escriben así:
 
 <img src="images/media-queries-2.png" width="800">
@@ -51,7 +52,7 @@ Para esto es necesario agregar al elemento `<link>` la propiedad `media`, y dent
 En este ejemplo, el archivo `desktop.css` será aplicado cuando la pantalla tenga más de 900 píxeles de ancho,
 mientras que el archivo `mobile.css` se aplicará cuando la pantalla tenga menos de 600 píxeles de ancho.
 
-# Placa 5 - Breakpoints comunes para diferentes dispositivos
+# Placa 6 - Breakpoints comunes para diferentes dispositivos
 
 Existen muchos dispositivos con pantallas de distintos tamaños, por lo que sería dificil aplicar las media queries de forma específica.
 Sin embargo, podemos utilizar algunas medidas para abarcar la mayoría de las pantallas:
