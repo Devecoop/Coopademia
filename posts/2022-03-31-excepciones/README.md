@@ -33,7 +33,7 @@ Por ejemplo, si nuestro programa recibe dos números y una operación, y el usua
 El flujo del programa se interrumpirá, y salvo que hagamos algo al respecto (“manejarlo”) el error se propagará hacia arriba en la llamada de funciones  hasta el final, lo cual causará que se detenga el programa.
 
 En muchos lenguajes también obtendremos el mensaje de error en la consola y el lugar adónde se generó esa excepción.
- Por ejemplo en python vemos la información del  “ZeroDivisionError” que se lanzó
+ Por ejemplo en Python vemos la información del  “ZeroDivisionError” que se lanzó
 
 <img src="images/excepciones-1.png" width="700">
 
@@ -56,18 +56,18 @@ Esto consiste en utilizar una estructura que posee (en principio) dos partes
 
 # Placa 6 - Excepciones propias:
 Todas las excepciones que mostramos hasta ahora vienen "de fábrica"(built-in) desde el lenguaje o alguna library.
-Algunos lenguajes nos permiten crear nuestras propias excepciones para utilizar en caso de que las built-in no nos alcancen
-Por ejemplo, tenemos un programa que le permite al usuario ingresar texto, pero no queremos que ingrese ninguna coma.
+Algunos lenguajes nos permiten crear nuestras propias excepciones para utilizar en caso de que las que nos ofrece no nos alcancen.
+Por ejemplo, tenemos un programa que le permite al usuario ingresar texto, pero no queremos que use ninguna coma.
 
 En Python para crear una excepción tenemos que heredar de la clase Exception.
 
 En este ejemplo, adentro del try estamos simulando que hay código que chequea si el string ingresado tiene comas y en caso
-de tener hace un **raise** de nuestra excepción
+de tenerlas hace un **raise** de nuestra excepción
 
 <img src="images/excepciones-3.png" width="700">
 
 
-Utilizando `raise` en nuestro código podemos generar el lanzamiento de una excepción para los casos que así lo requieren.
+Utilizando `raise` en nuestro código podemos lanzar nuestras excepciones (o también las built-in) cuando lo necesitemos.
 
 
 
