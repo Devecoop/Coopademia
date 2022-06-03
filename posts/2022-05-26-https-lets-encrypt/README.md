@@ -30,7 +30,7 @@ Let’s Encrypt indentifica al administrador del servidor por llave pública. La
 
 Una vez hecho esto, la autoridad de certificación verifica que los retos hayan sido satisfechos, y en la conexión verifica la firma. Si los retos son validos, entonces se le da autorización.
 
-<img src="images/https-lets-encrypt-1.png" width="600">
+<img src="images/https-lets-encrypt-2.png" width="600">
 
 # Placa 5 - Certbot <img src="images/certbot-logo.svg" width="200">
 
