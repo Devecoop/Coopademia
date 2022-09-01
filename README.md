@@ -60,8 +60,10 @@ sidebar: []
 ## Prueba local de jekyll
 
 - Instalar **ruby** y **gem**
-- Instalar **jekyll** y **bundle** con **gem**: `gem install jekyll bundler`
+- Instalar **jekyll** y **bundle** con **gem**: `gem install jekyll bundler webrick`
 - Entrar a la carpeta `docs/`
 - Instalar las dependencias del proyecto: `bundle install`
+- Instalar la dependencia extra no incluida (workaround): `bundle add webrick`
 - Ejecutar el servidor de desarrollo: `bundle exec jekyll serve --future` (`--future` es para que muestre post de fechas futuras, github ya lo hace)
+- Si no se encuentra en path, puede llegar a estar en entorno de usuario ejecutarlo asi (los paths pueden variar) ~/.local/share/gem/ruby/3.0.0/bin/jekyll serve --future
 - Entrar en `http://127.0.0.1:4000/Coopademia/` (no tiene live-reloading, hay que usar F5)
