@@ -1,9 +1,15 @@
 # Placa 1 - Introducción
-Hoy en coopademia: Comandos útiles para BASH
+Hoy en coopademia: Dataclasses de Python
 
-# Placa 2 - Búsqueda en el historial de comandos
+Desde su versión 3.7 python nos provee de Dataclasses. Las mismas nos permiten generar muchos de los métodos y atributos de una clase que son normalmente utilizados de manera automatizada. (boilerplate).
 
-Ese comando súper útil que usaste una vez, lo necesitás de nuevo pero no lo encontrás?
+# Placa 2 - Sintaxis
+
+Para transformar una clase en dataclass solo tenemos que usar el decordador @dataclass de la siguiente manera
+
+dataclasses overview.jpg
+
+Las dataclasses en python nos permiten tener generar muchos de los métodos y atributos de una clase que mas se usan generalmente (boilerplate)
 
 En BASH tenés un buscador de comandos:
 * `Ctrl + r`: Búsqueda en el historial "case-insensitive"
