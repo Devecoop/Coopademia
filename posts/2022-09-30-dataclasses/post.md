@@ -9,10 +9,22 @@ Para transformar una clase en dataclass solo tenemos que usar el decordador @dat
 
 dataclasses overview.jpg
 
-Las dataclasses en python nos permiten tener generar muchos de los métodos y atributos de una clase que mas se usan generalmente (boilerplate)
+Las dataclasses en python nos permiten generar automáticamente los dunder methods también llamados métodos mágicos (como __init__, __eq__, __repr__), y facilita la creación de atributos e incialización de los mismos.
 
-En BASH tenés un buscador de comandos:
-* `Ctrl + r`: Búsqueda en el historial "case-insensitive"
+Son interesante los casos de __init__ y __repr__ ya que el primero como método constructor nos permite inicializar atributos del objeto y el segundo representarlos en pantalla
+
+en lugar de escribir:
+
+```
+class Persona:
+    def __init__(self, nombre, apellido, edad):
+        self.nombre = nombre
+        self.apellido = apellido
+        self.edad = edad
+
+    def __repr__(self):
+        repr = f'Persona({self.nombre}, {self.apellido}: {self.edad})'
+```     
 
 Uso:
 	- Apretá `ctrl + r` y comenzá a escribir.
