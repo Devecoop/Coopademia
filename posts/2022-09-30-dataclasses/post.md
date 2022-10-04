@@ -15,6 +15,7 @@ Además de los métodos, facilita la creación de atributos e incialización de 
 
 # Placa 3 - Clase tradicional
 
+images/1.png
 ```
 class Persona:
     def __init__(self, nombre, apellido, edad):
@@ -28,6 +29,7 @@ class Persona:
 
 # Placa 4 - Dataclass
 
+images/2.png
 ```
 from dataclasses import dataclass
 
@@ -43,6 +45,7 @@ class Persona:
 
 Para la mayoría de los casos podemos utilizar la incialización simple, para casos más complejos, deberemos utilizar el objeto field.
 
+images/3.png
 ```
 from dataclasses import dataclass, field
 
