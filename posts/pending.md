@@ -15,7 +15,6 @@
 - django: atomic
 - django: middleware
 - python: docstrings
-- python: data classes
 - python: typing
 - python: magic methods
 - python: lazy evaluation (quizas generico comparando con eager, otros lenguajes, partial, etc)
@@ -26,4 +25,4 @@
 - Conceptos de funcionamiento de internet: dominios, dns, ips, puertos, etc
 - Concepto de docker (quizas contar algo de chroot o de conceptos generales de containers)
 - Cosas de seguridad informatica: ataques especificos, tips de seguridad basicos, etc.
-- deploys a netlify
+- Deploys a netlify
