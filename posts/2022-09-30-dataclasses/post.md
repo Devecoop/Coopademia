@@ -31,6 +31,7 @@ class Persona:
 # Placa 4 - Dataclass
 
 <img src="images/2.png" >
+
 ```
 from dataclasses import dataclass
 
@@ -47,6 +48,7 @@ class Persona:
 Para la mayoría de los casos podemos utilizar la incialización simple, para casos más complejos, deberemos utilizar el objeto field.
 
 <img src="images/3.png" >
+
 ```
 from dataclasses import dataclass, field
 
