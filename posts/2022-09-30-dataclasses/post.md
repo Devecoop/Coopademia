@@ -17,6 +17,7 @@ Además de los métodos, facilita la creación de atributos e incialización de 
 
 <img src="images/1.png" >
 
+<!--
 ```
 class Persona:
     def __init__(self, nombre, apellido, edad):
@@ -27,11 +28,12 @@ class Persona:
     def __repr__(self):
         repr = f'Persona({self.nombre}, {self.apellido}: {self.edad})'
 ```     
-
+-->
 # Placa 4 - Dataclass
 
 <img src="images/2.png" >
 
+<!--
 ```
 from dataclasses import dataclass
 
@@ -42,6 +44,7 @@ class Persona:
     edad: int = 0
 
 ```     
+-->
 
 # Placa 5 - Parámetros de incialización y valores por defecto
 
@@ -49,6 +52,7 @@ Para la mayoría de los casos podemos utilizar la incialización simple, para ca
 
 <img src="images/3.png" >
 
+<!--
 ```
 from dataclasses import dataclass, field
 
@@ -68,6 +72,7 @@ objeto = C(13, 567)
 >> 10
     
 ```
+-->
 
 # Placa 6 - Conclusión
 
