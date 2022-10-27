@@ -7,9 +7,9 @@ Desde su versión 3.7 python nos provee de Dataclasses. Las mismas nos permiten 
 
 Las dataclasses en python nos permiten generar automáticamente los dunder methods también llamados métodos mágicos 
 
-Incialización: __init__
-Representación: __repr__
-Comparación: __eq__, __lt__,__gt__, __le__, __ge__
+Incialización: ```__init__```
+Representación: ```__repr__```
+Comparación: ```__eq__```, ```__lt__```,```__gt__```, ```__le__```, ```__ge__```
 
 Además de los métodos, facilita la creación de atributos e incialización de los mismos.
 
