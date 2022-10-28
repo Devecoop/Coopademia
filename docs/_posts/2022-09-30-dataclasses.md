@@ -8,98 +8,77 @@ categories: python
 tags: python
 sidebar: []
 ---
-Qué es un debugger? Es una herramienta que te permite frenar la ejecución de un programa y evaluar el estado del mismo (de sus variables) en el punto en que se frenó.
-Esto se vuelve superutil cuando tenemos errores o comportamientos extraños en nuestro código pero no podemos saber por qué.
 
-En general antes de conocer los debuggers hacemos uso de herramientas que imprimen por consola las variables que queremos evaluar. Y si bien es una estrategia que puede tener su utilidad, los debuggers añaden muchas otras.
+# Introducción
+Hoy en coopademia: Dataclasses de Python
 
-En este caso vamos a mostrarte como ejemplo la herramientas de debugging que trae Python, pdb (Python Debugger).
+Desde su versión 3.7 python nos provee de Dataclasses. Las mismas nos permiten generar muchos de los métodos y atributos de una clase que son normalmente utilizados de manera automatizada. (boilerplate).
 
-## Ejemplo
+# ¿Qué son?
 
-Supongamos que nuestro programa es el siguiente:
+Las dataclasses en python nos permiten generar automáticamente los dunder methods también llamados métodos mágicos 
 
-```python
-def sumar_numeros(numero_1, numero_2):
-    return numero_1 + numero_2
+Incialización: ```__init__```
+Representación: ```__repr__```
+Comparación: ```__eq__```, ```__lt__```,```__gt__```, ```__le__```, ```__ge__```
 
+Además de los métodos, facilita la creación de atributos e incialización de los mismos.
 
-numero_1 = input('Ingresá un número: ')
-numero_2 = input('Ingresá otro número: ')
+# Clase tradicional
 
-resultado = sumar_numeros(numero_1, numero_2)
-print resultado
 ```
+class Persona:
+    def __init__(self, nombre, apellido, edad):
+        self.nombre = nombre
+        self.apellido = apellido
+        self.edad = edad
 
+    def __repr__(self):
+        repr = f'Persona({self.nombre}, {self.apellido}: {self.edad})'
+```     
+Dataclass
 
-Ejecutamos el programa, y cuando nos piden cada número ingresamos primero un 3, y luego un 4.
-Cuando vemos el resultado descubrimos que en vez de un valor de 7 obtuvimos un 34. 
-Vamos a usar este sencillo ejemplo para mostrar la utilidad de pdb.
-
-## Como debuggear nuestro código
-
-Vamos a agregar al código un breakpoint, es decir, una instrucción del debugger para que frene en el momento en que queremos evaluar nuestro código.
-
-
-* Primero tenemos que importar el módulo:
-```import pdb```.
-* Luego usamos la función **set_trace()** para indicarle que frene exactamente en ese punto:
- ```pdb.set_trace()```. No sólo el código frena, sino que nos permite interactuar dentro del mismo, podemos ingresar cualquier instrucción de Python
-
-Por ejemplo, vamos a generar ese breakpoint en la función que suma, que es adonde suponemos está nuestro error:
-
-```python
-def sumar_numeros(numero_1, numero_2):
-    import pdb
-    pdb.set_trace()
-    return numero_1 + numero_2
 ```
+from dataclasses import dataclass
 
-Al ejecutar nuestro código vamos a ver:
+@dataclass
+class Persona:
+    nombre: str     
+    apellido: str    
+    edad: int = 0
+
+```     
+
+Parámetros de incialización y valores por defecto
+
+Para la mayoría de los casos podemos utilizar la incialización simple, para casos más complejos, deberemos utilizar el objeto field.
+
 ```
-> python3 prueba1.py
-Ingresá un número: 3
-Ingresá otro número: 4
-> /home/devecoop/coopadiemia/debugging/aprendiendo_pdb.py(4)sumar_numeros()
--> return numero_1 + numero_2
-(Pdb)
+from dataclasses import dataclass, field
+
+@dataclass
+class C:
+    x: int # x no tiene valor por defecto
+    y: int = field(repr=False) # y no tiene valor por defecto y no aparece en la repsentación
+    z: int = field(repr=False, default=10) # z tiene valor por defecto 10 pero no tiene representación
+    t: int = 20 # t tiene valor por defecto 20 y tiene representación
+
+>> objeto = C()
+*** TypeError: C.__init__() missing 2 required positional arguments: 'x' and 'y'
+objeto = C(13, 567)
+>> objeto
+>> C(x=13, t=20)
+>> df.z
+>> 10
+    
 ```
+Conclusión
 
-1. Lo primero que vemos es que la herramienta nos marca el punto exacto en el que está parado nuestra ejecución:
-La ruta absoluta del archivo, el número de línea entre paréntesis y luego el nombre.
-2. Lo siguiente que nos muestra es la próxima línea que se ejecutará luego de que le digamos al debugger que continúe (o sea, esa línea aún no fue ejecutada, si fuera la creación de una variable no podríamos en este punto acceder a ella).
-3. El prompt **(Pdb)** nos señala que nuestro código está frenado con el debugger, y en ese prompt podemos usar cualquier instrucción de python, y tenemos acceso a todas las variables que son accesibles en ese contexto (scope).
+Las dataclasses son una herramienta muy útil de python, que pueden ahorrarnos mucho tiempo escribiendo código y por lo tanto tener menos errores. No te olvidés de incorporarla a tu caja de herramientas
 
-Entonces por ejemplo podemos ver el contenido de los parámetros de la función en la que está frenado el código. No es necesario usar print, ya que por defecto pdb va a imprimir las variables o los resultados de ejecuciones que le pidamos:
+¡Hasta la próxima con más tips de python!
 
-```python
-(Pdb) numero_1
-'3'
-(Pdb)
-```
+# Links
 
-Pdb nos devuelve el valor y ya podemos intuir nuestro problema, el número 3 es en realidad un string, lo vemos con las comillas. Pero si queremos asegurarnos todavía más podemos evaluar el tipo de esa variable:
-
-```python
-(Pdb) type(numero_1)
-<class 'str'>
-(Pdb)
-```
-
-Con esto ya podemos suponer que el problema es que estamos concatenando strings y no sumando números.
-
-## Comandos para moverse dentro del debugger
-Una vez que está frenado el código en un breakpoint los comandos más básicos son:
-
-* **n**: ejecuta la línea actual y se mueve a la siguiente línea de la función en la que está frenado nuestro código.
-
-* **c:** continuar la ejecución hasta el próximo breakpoint (si existe) o hasta finalizar el programa.
-
-* **l**: imprime en pantalla las 10 líneas de código anteriores a la línea actual, la línea actual y las 10 líneas posterioress a la actual.
-
-* **q**: sale del debugger.
-
-
-## TIP final
-
-**No olvides sacar los breakpoints de tu código antes de commitear!**
+- https://docs.python.org/3/library/dataclasses.html
+- https://realpython.com/python-data-classes/
