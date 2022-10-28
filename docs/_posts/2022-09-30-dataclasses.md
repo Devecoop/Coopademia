@@ -3,7 +3,7 @@ layout: post
 title: Dataclasses
 subheading: 
 author: Ska
-image: assets/images/posts/flexbox/0.png
+image: assets/images/posts/coopademia/0.png
 categories: python
 tags: python
 sidebar: []
