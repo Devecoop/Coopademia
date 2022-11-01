@@ -2,7 +2,6 @@
 
 - Grid
 - Cron
-- Tipos de testing (unitario, e2e, integracion, ...)
 - Versionado (numeros, beta, alpha, release)
 - git flow
 - git trunk based
