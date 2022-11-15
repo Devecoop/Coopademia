@@ -1,35 +1,25 @@
 # Placa 1 - Introducción
-Hoy en coopademia: Dataclasses de Python
+Hoy en coopademia: Tipos de testing
 
-Desde su versión 3.7 python nos provee de Dataclasses. Las mismas nos permiten generar muchos de los métodos y atributos de una clase que son normalmente utilizados de manera automatizada. (boilerplate).
+A la hora de desarrollar software, en muchas ocasiones es poco valorado el proceso de prueba del mismo o "testing", siendo este cada vez mas importante a medida que nuestro proyecto crece. Hoy vamos a explorar los diferentes tipos de tests automatizados y para que sirve cada uno.
 
-# Placa 2 - ¿Qué son?
+# Placa 2 - ¿Qué tipo de testing existen?
 
-Las dataclasses en python nos permiten generar automáticamente los dunder methods también llamados métodos mágicos 
+Si bien existen variedad de tipos de tests, a grandes rasgos podemos identificar las siguientes:
 
-Incialización: ```__init__```
-Representación: ```__repr__```
-Comparación: ```__eq__```, ```__lt__```,```__gt__```, ```__le__```, ```__ge__```
+- Unit Tests
+- Integration Tests
+- Functional Tests
+- End-To-End Tests
+- Regression Testing
+- Smoke Testing
+- Acceptance Testing
 
-Además de los métodos, facilita la creación de atributos e incialización de los mismos.
+# Placa 3 - Unit Tests
 
-# Placa 3 - Clase tradicional
+Son los tests de más bajo nivel. Mediante los tests de unidad lo que se prueba es funcionalidad lo más atómica y específica posible. Buscamos aislar el comportamiento de una función o método abstrayendo cualquuier interacción con otros módulos, funciones o agentes externos como bases de datos o conexiones de red.
 
-<img src="images/1.png" >
-
-<!--
-```
-class Persona:
-    def __init__(self, nombre, apellido, edad):
-        self.nombre = nombre
-        self.apellido = apellido
-        self.edad = edad
-
-    def __repr__(self):
-        repr = f'Persona({self.nombre}, {self.apellido}: {self.edad})'
-```     
--->
-# Placa 4 - Dataclass
+# Placa 4 - Integration Tests
 
 <img src="images/2.png" >
 
