@@ -1,7 +1,7 @@
 # Placa 1 - Introducción
 Hoy en coopademia: Tipos de testing
 
-A la hora de desarrollar software, en muchas ocasiones es poco valorado el proceso de prueba del mismo o "testing", siendo este cada vez mas importante a medida que nuestro proyecto crece. Hoy vamos a explorar los diferentes tipos de tests automatizados y para que sirve cada uno.
+A la hora de desarrollar software, en muchas ocasiones es poco valorado el proceso de prueba del mismo o "testing", siendo este cada vez mas importante a medida que nuestro proyecto crece. Hoy vamos a explorar los diferentes tipos de tests que existen así como el propósito de cada uno.
 
 # Placa 2 - ¿Qué tipo de testing existen?
 
@@ -19,7 +19,7 @@ Veamos en detalle algunos de ellos
 
 # Placa 3 - Unit Tests
 
-Son los tests de más bajo nivel. Mediante los tests de unidad lo que se prueba es funcionalidad lo más atómica y específica posible. Buscamos aislar el comportamiento de una función o método abstrayendo cualquuier interacción con otros módulos, funciones o agentes externos como bases de datos o conexiones de red.
+Son los tests de más bajo nivel. Mediante los tests de unidad lo que se prueba es funcionalidad lo más atómica y específica posible. Buscamos aislar el comportamiento de una función o método, abstrayendo cualquier interacción con otros módulos, funciones o agentes externos como bases de datos o conexiones de red.
 
 # Placa 4 - Integration/Functional Tests
 
@@ -28,24 +28,24 @@ Las pruebas de integración y funcionales, son tests de alto nivel donde se veri
 
 # Placa 5 - End 2 End Tests
 
-Las pruebas de punta a punta (End to end) sirven para replicar el comportamiento de les usuaries del sistema de manera completa. Se verifican cosas como 
+Las pruebas de punta a punta (End to end) sirven para replicar el comportamiento de les usuaries del sistema de manera completa. Se verifican cosas como:
 
-Inicios de sesión
-Recupero de contraseñas
-Uso de filtros
+- Inicios de sesión
+- Recupero de contraseñas
+- Uso de filtros
+...
 
 Estas pruebas son muy costosas para mantener de manera automatizada, por lo que se suele apelar más a los tests unitarios y mantener unos pocos tests de punta a punta.
 
-# Placa 5 - Acceptance Tests
+# Placa 6 - Acceptance Tests
 
 Son pruebas manuales que se realizan una vez que el software se encuentra en funcionamiento para constatar que el sistema satisfaga los requerimientos del negocio.
-Acceptance testing
 
 Es importante que los criterios de aceptación estén definidos antes de comenzar a trabajar en el proyecto y ser actualizados ante cualquier cambio que pueda surgir.
 
 # Placa 6 - Conclusión
 
-Los distintos tipos de Tests nos permiten asegurar el comportamiento en distintas partes e instancias del desarrollo de nuestro software. Nos ayudan a entregar un producto mejor, más seguro, estable y mantenible en el tiempo.
+Los distintos tipos de Tests nos permiten asegurar el comportamiento en las diversas partes e instancias del desarrollo de nuestro software. Nos ayudan a entregar un producto mejor, más seguro, estable y mantenible en el tiempo.
 
 ¿Ya le agregaste Tests a tu proyecto?
 
