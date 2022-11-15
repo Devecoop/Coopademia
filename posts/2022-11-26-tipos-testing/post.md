@@ -15,63 +15,39 @@ Si bien existen variedad de tipos de tests, a grandes rasgos podemos identificar
 - Smoke Testing
 - Acceptance Testing
 
+Veamos en detalle algunos de ellos
+
 # Placa 3 - Unit Tests
 
 Son los tests de más bajo nivel. Mediante los tests de unidad lo que se prueba es funcionalidad lo más atómica y específica posible. Buscamos aislar el comportamiento de una función o método abstrayendo cualquuier interacción con otros módulos, funciones o agentes externos como bases de datos o conexiones de red.
 
-# Placa 4 - Integration Tests
+# Placa 4 - Integration/Functional Tests
 
-<img src="images/2.png" >
+Las pruebas de integración y funcionales, son tests de alto nivel donde se verifican que las distintas partes del sistema funcionen correctamente al estar en conjunto. En el caso de los tests funcionales además de verificar el funcionamiento, se comprueba que las salidas de una acción, se correspondan con el procesamiento de los datos que fueron ingresados, sin importar los estados intermedios.
 
-<!--
-```
-from dataclasses import dataclass
 
-@dataclass
-class Persona:
-    nombre: str     
-    apellido: str    
-    edad: int = 0
+# Placa 5 - End 2 End Tests
 
-```     
--->
+Las pruebas de punta a punta (End to end) sirven para replicar el comportamiento de les usuaries del sistema de manera completa. Se verifican cosas como 
 
-# Placa 5 - Parámetros de incialización y valores por defecto
+Inicios de sesión
+Recupero de contraseñas
+Uso de filtros
 
-Para la mayoría de los casos podemos utilizar la incialización simple, para casos más complejos, deberemos utilizar el objeto field.
+Estas pruebas son muy costosas para mantener de manera automatizada, por lo que se suele apelar más a los tests unitarios y mantener unos pocos tests de punta a punta.
 
-<img src="images/3.png" >
+# Placa 5 - Acceptance Tests
 
-<!--
-```
-from dataclasses import dataclass, field
+Son pruebas manuales que se realizan una vez que el software se encuentra en funcionamiento para constatar que el sistema satisfaga los requerimientos del negocio.
+Acceptance testing
 
-@dataclass
-class C:
-    x: int # x no tiene valor por defecto
-    y: int = field(repr=False) # y no tiene valor por defecto y no aparece en la repsentación
-    z: int = field(repr=False, default=10) # z tiene valor por defecto 10 pero no tiene representación
-    t: int = 20 # t tiene valor por defecto 20 y tiene representación
-
->> objeto = C()
-*** TypeError: C.__init__() missing 2 required positional arguments: 'x' and 'y'
-objeto = C(13, 567)
->> objeto
->> C(x=13, t=20)
->> df.z
->> 10
-    
-```
--->
+Es importante que los criterios de aceptación estén definidos antes de comenzar a trabajar en el proyecto y ser actualizados ante cualquier cambio que pueda surgir.
 
 # Placa 6 - Conclusión
 
-Las dataclasses son una herramienta muy útil de python, que pueden ahorrarnos mucho tiempo escribiendo código y por lo tanto tener menos errores. No te olvidés de incorporarla a tu caja de herramientas
+Los distintos tipos de Tests nos permiten asegurar el comportamiento en distintas partes e instancias del desarrollo de nuestro software. Nos ayudan a entregar un producto mejor, más seguro, estable y mantenible en el tiempo.
 
-¡Hasta la próxima con más tips de python!
+¿Ya le agregaste Tests a tu proyecto?
 
-# Links
-
-- https://docs.python.org/3/library/dataclasses.html
-- https://realpython.com/python-data-classes/
+¡Hasta la próxima!
 
