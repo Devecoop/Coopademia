@@ -1,11 +1,11 @@
 # Placa 1 - Introducción
 Hoy en coopademia: Tipos de testing
 
-A la hora de desarrollar software, en muchas ocasiones es poco valorado el proceso de prueba del mismo o "testing", siendo este cada vez mas importante a medida que nuestro proyecto crece. Hoy vamos a explorar los diferentes tipos de tests que existen así como el propósito de cada uno.
+A la hora de desarrollar software, en muchas ocasiones es poco valorado el proceso de prueba del mismo o "testing", siendo este cada vez más importante a medida que nuestro proyecto crece. Hoy vamos a explorar los diferentes tipos de tests que existen así como el propósito de cada uno.
 
 # Placa 2 - ¿Qué tipos de testing existen?
 
-Si bien existen variedad de tipos de tests, a grandes rasgos podemos identificar las siguientes:
+Si bien existe una gran variedad de tipos de tests, a grandes rasgos podemos identificar las siguientes:
 
 - Unit Tests
 - Integration Tests
