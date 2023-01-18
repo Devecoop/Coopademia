@@ -4,7 +4,7 @@ title: Compatibilidad de los navegadores con un sitio web
 subheading: 
 author: ayecampot
 image: assets/images/posts/coopademia/0.png
-categories: accesibility, forntend
+categories: accesibility, frontend
 tags: images
 sidebar: []
 ---
