@@ -1,5 +1,6 @@
 # Temas futuros
 
+- Hooks parte II
 - Grid parte I - ventajas con flexbox, propiedades del padre, del hijo grid gap.
 - Grid parte II - grid áreas
 - Cron
