@@ -29,6 +29,7 @@ Hoy veremos el useState que nos permite agregarle un estado local a un component
 
 # Veamos un ejemplo
 
+```
 import React, { useState } from 'react';
  
 function ShowTextExample() {
@@ -51,6 +52,7 @@ function ShowTextExample() {
  
 export default ShowTextExample;
 
+```
 
 #  ¿Qué podemos observar en el mismo?
 
