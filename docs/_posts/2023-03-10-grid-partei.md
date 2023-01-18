@@ -15,11 +15,11 @@ sidebar: []
 Surge de la necesidad de algo más potente, y toma las ventajas del sistema Flexbox, sumándole muchas mejoras y características que permiten crear muy rápido cuadrículas sencillas y potentes. 
 Grid y Flexbox pueden convivir perfectamente, de hecho son grandes aliades.
 
-# Placa 3 ¿Cuáles son las diferencias entre Flexbox y Grids?
+# ¿Cuáles son las diferencias entre Flexbox y Grids?
 La diferencia básica entre CSS Grid Layout y CSS Flexbox Layout es que Flexbox se creó para diseños de una dimensión, en una fila o una columna. En cambio CSS Grid Layout se pensó para el diseño bidimensional, en varias filas y columnas al mismo tiempo.
 
 
-#  ¿Cómo comenzamos a generar nuestra grilla?
+# ¿Cómo comenzamos a generar nuestra grilla?
 Activamos la cuadrícula Grid utilizando, sobre el elemento contenedor, la propiedad display con el valor grid o inline-grid. El primero de ellos permite que aquella aparezca encima/debajo del contenido exterior (en bloque), mientras que el segundo permite que la cuadrícula se vea a la izquierda/derecha (en línea) del contenido exterior.
 
 # Luego le podemos aplicar cualquiera de las siguientes propiedades para generar filas y columnas y sus respectivos tamaños.
@@ -65,6 +65,7 @@ grid {
    <div>Item 3</div>
    <div>Item 4</div>
 </section>
+
 ```
 
 # ¿Podemos usar medidas relativas en grid?
@@ -104,53 +105,3 @@ https://lenguajecss.com/css/maquetacion-y-colocacion/grid-css/
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-# Hoy en coopademia: Compatibilidad de los navegadores con un sitio web
-
-
-# ¿Qué significa que nuestra web sea compatible?
-
-Significa que se vea igual (o muy similar) en la mayoría de los navegadores. Si se consigue que se vea bien en: Chrome, Firefox, Opera, Safari, Mozilla y Edge, significa que el 99% de tus usuaries van a ver tu web correctamente.
-
-# ¿Por qué hay incompatibilidad entre los navegadores?
-
-Porque no todos los navegadores interpretan en código HTML y CSS de la misma manera, entre ellos existen pequeñas diferencias que hacen que el resultado no sea el mismo de unos a otros.
-
-# ¿Cómo mejorar la compatibilidad de un sitio web?
-
-Validar el código de la web en base a los estándares del W3C, te permite escanear en busca de errores de programación para una vez detectados poder corregirlos. A su vez nos permite saber que estamos haciendo las cosas correctamente más allá de la funcionalidad.
-
-
-# Algunos consejos de CSS que mejorar la compatibilidad
-
--> Reseteá tu css para anular los valores por defecto de cada navegador.
-
-```
-*​{
-margin:o;
-padding;
-}
-```
--> Usar reglas de CSS que sean soportadas por la mayoría de los navegadores, una buena herramienta para conocerlas es caniuse.com
-
-# Testear la web en diferentes navegadores.
-
-El testeo puede ser de forma manual ingresando nuestra web en cada navegador, pero también hay diferentes herramientas que te permiten visualizar tu web en diferentes browser, como por ejemplo: Browershots, IE Tester y Browser Sandbox.
-
-# ¿Sabías la importancia de testear la compatibilidad?
-
-¡Hasta la próxima!
-
-# Links
-https://www.lawebera.es/xhtml-css/compatibilidad-web-navegadores.php

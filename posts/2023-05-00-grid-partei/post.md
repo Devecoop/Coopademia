@@ -1,21 +1,21 @@
 # Placa 1 - Introducción
 Hoy en coopademia: CSS Grid Parte I
 
-# Placa 2 ¿Cómo nace CSS grid?
+# Placa 2 -¿Cómo nace CSS grid?
 Surge de la necesidad de algo más potente, y toma las ventajas del sistema Flexbox, sumándole muchas mejoras y características que permiten crear muy rápido cuadrículas sencillas y potentes. 
 Grid y Flexbox pueden convivir perfectamente, de hecho son grandes aliades.
 
-# Placa 3 ¿Cuáles son las diferencias entre Flexbox y Grids?
+# Placa 3 - ¿Cuáles son las diferencias entre Flexbox y Grids?
 La diferencia básica entre CSS Grid Layout y CSS Flexbox Layout es que Flexbox se creó para diseños de una dimensión, en una fila o una columna. En cambio CSS Grid Layout se pensó para el diseño bidimensional, en varias filas y columnas al mismo tiempo.
 
 (Imagen de referencia 1)
 
-# Placa 4- ¿Cómo comenzamos a generar nuestra grilla?
+# Placa 4 - ¿Cómo comenzamos a generar nuestra grilla?
 Activamos la cuadrícula Grid utilizando, sobre el elemento contenedor, la propiedad display con el valor grid o inline-grid. El primero de ellos permite que aquella aparezca encima/debajo del contenido exterior (en bloque), mientras que el segundo permite que la cuadrícula se vea a la izquierda/derecha (en línea) del contenido exterior.
 
 (Imagen de referencia 2)
 
- # Placa 5-Luego le podemos aplicar cualquiera de las siguientes propiedades para generar filas y columnas y sus respectivos tamaños.
+ # Placa 5 -Luego le podemos aplicar cualquiera de las siguientes propiedades para generar filas y columnas y sus respectivos tamaños.
 
  grid-template-columns:
 Establece el TAMAÑO de cada columna (col 1, col 2...).
@@ -28,7 +28,7 @@ Establece el TAMAÑO de los huecos entre filas
 (líneas horizontales).
 
 
- # Placa 6-Luego le podemos aplicar cualquiera de las siguientes propiedades para generar filas y columnas y sus respectivos tamaños.
+ # Placa 6 -Luego le podemos aplicar cualquiera de las siguientes propiedades para generar filas y columnas y sus respectivos tamaños.
 
 grid-column-gap
 Establece el TAMAÑO de los huecos entre columnas (líneas verticales).
@@ -53,6 +53,7 @@ grid {
    <div>Item 3</div>
    <div>Item 4</div>
 </section>
+
 ```
 
 # Placa 8- ¿Cómo se vería esta grilla en el browser?
