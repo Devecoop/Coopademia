@@ -1,6 +1,6 @@
 ---
 layout: post
-title: hooks parte I
+title: Hooks parte I
 subheading: 
 author: ayecampot
 image: assets/images/posts/coopademia/0.png
