@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Compatibilidad de los navegadores con un sitio web
+title: Compatibilidad de los navegadores 
 subheading: 
 author: ayecampot
 image: assets/images/posts/coopademia/0.png
