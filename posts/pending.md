@@ -1,7 +1,7 @@
 # Temas futuros
 
 - Hooks parte II
-- Grid parte I - ventajas con flexbox, propiedades generales
+- Grid parte I - ventajas con flexbox, propiedades generales (Realizada)
 - Grid parte II - Grid, propiedades aplicadas al padre y a los hijos.
 - Grid parte III - Grid áreas
 - Cron
