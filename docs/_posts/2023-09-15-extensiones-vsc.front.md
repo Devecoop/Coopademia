@@ -9,55 +9,37 @@ tags: images
 sidebar: []
 ---
 
-# Hoy en coopademia: React Hooks parte II
+# Hoy en coopademia:Extensiones de VSC para Frontend Developers
+Te compartimos las extensiones que utilizamos cotidianamente.
 
-En la primera parte vimos las ventajas de usar Hooks para prescindir de clases, luego vimos uno de los más utilizados el useState. hoy es el turno de useEffects
+# Auto close tags
+Ayuda a no olvidarnos el cierre de ninguna etiqueta en un HTML. Para quienes recién están comenzando es un 10.
 
-# useEffects: el Hook del efecto
-
-Este hook es el que utilizaremos para reemplazar los métodos del ciclo de vida de los componentes de clase: ComponentDidMount, ComponentDidUpdate, ComponentWillUnmount. El hook useEffect es el equivalente a estos tres métodos combinados. Este hook se ejecuta siempre después del primer renderizado y después de cada actualización y, por lo tanto, se utiliza para ejecutar funciones después de hacer render.
-
-
-# ¿Qué hace useEffects?
-useEffect recibe una función que puede realizar todo tipo de operación incluyendo efectos secundarios. Un ejemplo típico de una operación que podemos querer realizar es una llamada a un servicio.
+# Prettier
+Uno de los más populares de VSC, sirve para auto tabular el código con un simple comando, algo importante a destacar es que esta extensión funciona si nuestras etiquetas están correctas, no hay ninguna de más o se olvidó alguna etiqueta de cierre.
 
 
-# ¿Cómo controlamos las llamadas?
-Para controlar las llamadas para asegurarnos de que no se haga la petición innecesariamente si, por ejemplo, un valor se mantuvo equivalente entre renderizados,  con useEffect lo logramos pasándole a la función, un array como segundo parámetro. El valor de este array será el que React comparará para saber si tiene que volver a ejecutar el hook. En caso de no variar este valor, el hook no se ejecutará. 
+# CodeMetric
+Es una buena guía, ya que va analizando nuestro código estático y nos ayuda a velar por la calidad de nuestro desarrollo. Usá los tres colores del semáforo para mostrarnos que tan fácil es de mantener dicho código.
 
-#  Veamos un ejemplo:
 
-```
+# Ident Rainbow
+Son guias de color que nos ayudan a visualizar de forma clara y sencilla las tabulaciones de nuestro código. 
 
-import React, { useState, useEffect } from 'react';
- 
-function FormExample() {
- const [name, setName] = useState('');
- const [lastName, setLastName] = useState('');
- useEffect(() => {
-   console.log('se ha ejecutado el hook');
- }, [name]);
- 
- return (
-   <div>
-     <input value={name} onChange={(event) => setName(event.target.value)} />
-     <input value={lastName} onChange={(event) => setLastName(event.target.value)} />
-   </div>
- );
-}
 
-``` 
-#  ¿Qué podemos observar en él?
+# Imagen preview
+Si queremos que al costado de nuestro código aparezca una miniatura de la imagen insertada está es la extensión que estás buscando, muchos creen que es algo nativo en el VSC pero la debemos instalar.
 
-El hook useEffect simplemente realiza un console.log() en cada ocasión en que se ejecuta. Si no le pasaremos el segundo parámetro [name], veríamos el resultado de console.log() cada vez que el usuario introduce un valor en cualquiera de los dos inputs. En cambio, al pasarle la variable name como dependencia, el hook se ejecuta solamente cuando el usuario introduce un valor en el input correspondiente a name.
+# Live Server
+Es una herramienta que nos permite lanzar un servidor de desarrollo local para previsualizar en el navegador lo que estamos escribiendo en nuestro editor de código.
 
-# Reflexiones finales
 
-Al usar este hook de efecto es importante pasarle este segundo parámetro, si no puede ejecutarse innecesariamente y hasta generar un loop infinito.
+# JS JSX Snippets
+Permite crear con un simple atajo fragmentos de código reutilizables, es muy útil para quienes sean desarrolladores de React.
 
-# Te esperamos para seguir adentrándonos en el mundo Hooks de React.
 
-# Links
+# Un extra simpático vscode-pet
+Sirve para aquellos momentos donde estamos pensando para focalizar nuestra atención, podemos crear mascotas que aparecen al costado izquierdo de nuestro editor, en el momento que comenzamos a codear podemos minimizarlo. Muchos creen que es solo un adorno pero tiene un objetivo de uso para momentos de pensamiento o  algunos minutos de descanso.
 
-https://es.reactjs.org/docs/hooks-intro.html
-https://www.paradigmadigital.com/dev/hooks-como-utilizarlos-react/
+
+¡Hasta la próxima!
