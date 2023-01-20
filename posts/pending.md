@@ -1,9 +1,4 @@
 # Temas futuros
-
-- Hooks parte II
-- Grid parte I - ventajas con flexbox, propiedades generales (Realizada)
-- Grid parte II - Grid, propiedades aplicadas al padre y a los hijos.
-- Grid parte III - Grid áreas
 - Cron
 - Versionado (numeros, beta, alpha, release)
 - git flow
@@ -22,9 +17,11 @@
 - python: lazy evaluation (quizas generico comparando con eager, otros lenguajes, partial, etc)
 - Code smells
 - Patrones de diseño
-- Plugins de vscode
+- Plugins de vscode para back
 - Comandos de bash
 - Conceptos de funcionamiento de internet: dominios, dns, ips, puertos, etc
 - Concepto de docker (quizas contar algo de chroot o de conceptos generales de containers)
 - Cosas de seguridad informatica: ataques especificos, tips de seguridad basicos, etc.
 - Deploys a netlify
+
+
