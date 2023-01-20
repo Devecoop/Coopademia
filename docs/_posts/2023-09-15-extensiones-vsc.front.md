@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hooks parte II
+title: Extensiones del VSC parte I
 subheading: 
 author: ayecampot
 image: assets/images/posts/coopademia/0.png
