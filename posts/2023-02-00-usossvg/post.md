@@ -18,14 +18,16 @@ Existen diferentes formas que nos van a dar mayor o menor grado de manipulación
 
 # Placa 5 - SVG Como imagen en un HTML 
 
-Podemos incorporarla como cualquier imagen referenciando un <svg>​ con una etiqueta ​<img>​ a través su atributo source​. En este caso la ilustración no será accesible ni manipulable más allá de lo que podemos hacer con una etiqueta <img>​.
+Podemos incorporarla como cualquier imagen referenciando un ```<svg>​ ```con una etiqueta ``` ​<img>​ a través su atributo source​. En este caso la ilustración no será accesible ni manipulable más allá de lo que podemos hacer con una etiqueta  <img>```.
 Estas pruebas son muy costosas para mantener de manera automatizada, por lo que se suele apelar más a los tests unitarios y mantener unos pocos tests de punta a punta.
 
-<img alt="Un" height="48" src="​enlace-a-la-imagen.svg​" width="48" />
+```
 
+<img alt="Un" height="48" src="​enlace-a-la-imagen.svg​" width="48" />
+```
 # Placa 6 - SVG como imagen decorativa con CSS
 
-También podemos llamar al <svg> mediante la función ​url() de CSS a través de la propiedad background-image, de esta forma  tampoco son manipulables lo atributos propios del SVG.
+También podemos llamar al ``` <svg> ```mediante la función ​url() de CSS a través de la propiedad background-image, de esta forma  tampoco son manipulables lo atributos propios del SVG.
 
 ```
 .svg ​{
@@ -42,6 +44,7 @@ Se recomienda cuando tenemos varias imágenes y no queremos perjudicar la perfo
 
 Sprite.svg
 
+```
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg"> 
 <defs> 
 <symbol ​id=”avestruz”​ viewBox="0 0 512 512"> 
@@ -50,13 +53,16 @@ Sprite.svg
 </symbol> 
 </defs> 
 </svg>
+```
 
 Index.html
 
+``` 
  <svg width=”48” height=”48”>
  <use ​xlink:href=”enlace-al-recurso/sprite.svg#avestruz”
  />
  </svg>
+``` 
 
  # Placa 8 - SVG en línea
 
@@ -64,9 +70,11 @@ Index.html
 
  Index.html
 
+```
 <svg width="300" height="300" viewbox="0 0 300 300">
  <circle cx="150" cy="150" r="100"></circle>
 </svg>
+```
 
 Styles.css
 

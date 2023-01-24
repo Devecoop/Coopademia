@@ -8,7 +8,7 @@ Decidimos dejarle una caoopedemia especial para gird areas, porque con esta herr
 
 # Placa 3 -Veamos un poco de código - Este sería el HTMLl 
 
-
+```
 <div id="grilla">
  	<header class="border">Header</header>
  	<section id="productos" class="border">Section</section>
@@ -18,6 +18,7 @@ Decidimos dejarle una caoopedemia especial para gird areas, porque con esta herr
  	<footer class="border">Pie de pagina</footer>
 </div>
 
+```
 
 # Placa 4 - Veamos un poco de código - Este sería el css
 
