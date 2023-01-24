@@ -3,7 +3,7 @@
 Hoy en coopademia: Formas de incorporar imágenes en SVG a un proyecto web
 
 
-# Placa 2 -  Pero primero ¿Qué es un SVG?
+# Placa 2 -  Pero primero ¿Qué es un SVGsta
 
 SVG es el acrónimo de ‘Scalable Vector Graphics’, en la práctica es utilizado como un etiquetado especial para dibujar vectores, describiendo coordenadas dentro de un lienzo​ que nos permite generar ilustraciones escalables sin pérdida de resolución.
 
