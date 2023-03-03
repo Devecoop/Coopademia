@@ -71,11 +71,13 @@ grid {
 # ¿Podemos usar medidas relativas en grid?
 Sin ningún problema, de hecho existe la unidad fr (fraction) propia de grid para generar grillas que se adapten a diferentes tamaños de pantallas.
 
+```
 .grid {
     display: grid;  
     grid-template-columns: 2fr 1fr; 
     grid-template-rows: 3fr 1fr; 
 }
+```
 
 # Reflexiones finales
 CSS grid es una de las herramientas más potentes para hacer layout complejos y bidimensaionales, este es un primer acercamiento.
