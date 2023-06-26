@@ -1,6 +1,6 @@
 ---
 layout: post
-title: CSS Grid parte 1
+title: CSS Grid parte I
 subheading: 
 author: ayecampot
 image: assets/images/posts/coopademia/0.png
